@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial scale=1.0"/>
+    <title>Buzzarine</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <h1>Buzzarine</h1>
+    </nav>
+    <!--Main layout-->
+    <div class="layout">
+        <!--Sidebar-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <h2>@carinetang20</h2>
+                <p>Full Stack Developer</p>
+            </div>
+        </aside>
+        <!--Main feed-->
+        <main class="feed">
+            <!--Buzz Form-->
+            <section class="Buzz-form">
+                <form onsubmit="postBuzz();return False;">
+                    <label for="buzzInput">NewBuzz</label>
+                    <textarea id="buzzInput" placeholder="Share your buzz..." rows="3"></textarea>
+                    <button type="submit">Post</button>
+                </form>    
+            </section>
+            <!--Buzz list-->
+            <section id="BuzzFeed" class="Buzzes">
+                <!--Buzz posts will appear here-->
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
